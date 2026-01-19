@@ -1,0 +1,6 @@
+{
+  "name": "candidate-profile-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend for candidate profile playground"
+}

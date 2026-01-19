@@ -1,0 +1,20 @@
+<!-- Placeholder for deployed frontend -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Candidate Profile</title>
+  <script>
+    // Configure backend URL based on environment
+    const API_URL = window.location.hostname === 'localhost' 
+      ? 'http://localhost:3001'
+      : 'https://your-backend-url.com'; // Update after deployment
+    
+    // Redirect to actual frontend or load via iframe
+    window.location.href = './index.html?api=' + encodeURIComponent(API_URL);
+  </script>
+</head>
+<body>
+  <p>Loading...</p>
+</body>
+</html>

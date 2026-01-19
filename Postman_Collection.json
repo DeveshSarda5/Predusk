@@ -1,0 +1,82 @@
+{
+  "info": {
+    "name": "Candidate Profile API",
+    "description": "Collection for testing Candidate Profile Playground API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/health"
+      }
+    },
+    {
+      "name": "Get Profile",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/profile"
+      }
+    },
+    {
+      "name": "Update Profile",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Jane Developer\",\n  \"email\": \"jane@example.com\",\n  \"bio\": \"Full-stack developer passionate about modern web technologies\",\n  \"skills\": [\n    {\"skill\": \"JavaScript\", \"proficiency\": 9},\n    {\"skill\": \"TypeScript\", \"proficiency\": 8},\n    {\"skill\": \"React\", \"proficiency\": 8}\n  ],\n  \"education\": [\n    {\n      \"school\": \"Tech University\",\n      \"degree\": \"B.S.\",\n      \"field\": \"Computer Science\",\n      \"start_date\": \"2018\",\n      \"end_date\": \"2022\"\n    }\n  ],\n  \"projects\": [\n    {\n      \"title\": \"My Awesome Project\",\n      \"description\": \"A full-stack application\",\n      \"links\": [\"https://github.com/user/project\"]\n    }\n  ],\n  \"links\": {\n    \"github\": \"https://github.com/user\",\n    \"linkedin\": \"https://linkedin.com/in/user\",\n    \"portfolio\": \"https://user.com\",\n    \"resume\": \"https://user.com/resume.pdf\"\n  }\n}"
+        },
+        "url": "{{base_url}}/profile"
+      }
+    },
+    {
+      "name": "Get All Projects",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/projects"
+      }
+    },
+    {
+      "name": "Filter Projects by Skill (JavaScript)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/projects?skill=JavaScript"
+      }
+    },
+    {
+      "name": "Get Top Skills",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/skills/top"
+      }
+    },
+    {
+      "name": "Search (JavaScript)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/search?q=JavaScript"
+      }
+    },
+    {
+      "name": "Search (Developer)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/search?q=Developer"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3001",
+      "type": "string"
+    }
+  ]
+}
