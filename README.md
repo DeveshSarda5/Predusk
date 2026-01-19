@@ -7,11 +7,37 @@ A minimal full-stack application that stores and queries candidate profile infor
 - **Frontend (Vercel)**: https://predusk2.vercel.app/
 - **Backend API (Railway)**: https://predusk-production.up.railway.app/
 
-## 📚 Documentation
+## � Quick Start (Local Development)
 
-**⚡ Quick Start**: See [QUICK_START.md](QUICK_START.md) for 5-minute setup
-**📖 Full Implementation**: See [IMPLEMENTATION.md](IMPLEMENTATION.md) for project overview
-**🚀 Deployment**: See [DEPLOYMENT.md](DEPLOYMENT.md) for production deployment
+### Prerequisites
+- Node.js >= 18
+- npm or yarn
+
+### Setup Backend
+
+```bash
+cd backend
+npm install
+node init-db.js          # Initialize database and seed data
+npm start                # Start server (runs on http://localhost:3001)
+```
+
+### Setup Frontend
+
+```bash
+cd frontend
+npx http-server . --port 8080
+# Open http://localhost:8080 in your browser
+```
+
+## 📚 Project Information
+
+**Full-Stack Application** with:
+- ✅ Express.js backend with 7 REST API endpoints
+- ✅ Vanilla HTML/CSS/JavaScript frontend (no frameworks)
+- ✅ SQLite database with 7 normalized tables
+- ✅ CORS-enabled for cross-origin requests
+- ✅ Production deployments on Vercel (frontend) and Railway (backend)
 
 ## 📋 Architecture
 
