@@ -2,6 +2,13 @@
 
 A minimal full-stack application that stores and queries candidate profile information through an API and web interface.
 
+## 🌐 Live Deployment
+
+- **Frontend (Vercel)**: https://predusk2.vercel.app/
+- **Backend API (Railway)**: https://predusk-production.up.railway.app/
+
+## 📚 Documentation
+
 **⚡ Quick Start**: See [QUICK_START.md](QUICK_START.md) for 5-minute setup
 **📖 Full Implementation**: See [IMPLEMENTATION.md](IMPLEMENTATION.md) for project overview
 **🚀 Deployment**: See [DEPLOYMENT.md](DEPLOYMENT.md) for production deployment
