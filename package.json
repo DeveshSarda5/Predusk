@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Candidate Profile Playground - Full-stack application",
   "private": true,
-  "scripts": {
-    "start": "cd backend && npm install && node init-db.js && node server.js",
-    "dev": "cd backend && node server.js",
-    "init-db": "cd backend && node init-db.js",
-    "backend": "cd backend && npm install && npm start"
-  },
   "engines": {
     "node": "18.x"
   }
